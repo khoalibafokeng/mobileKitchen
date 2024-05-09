@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Calendar - Family Mobile Kitchen</title>
+    <style>
+        body {
+
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center; /* Center align all content */
+        }
+
+        header {
+
+               background-color: #007bff;
+             color: #fff;
+            padding: 20px 0;
+        }
+
+        .events {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .event {
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+        }
+
+        .event img {
+            width: 300px; /* Set image width to 300px */
+            height: 300px; /* Set image height to 300px */
+            object-fit: cover; /* Maintain aspect ratio and cover the space */
+            border-radius: 8px;
+            display: block; /* Ensure image is a block element */
+            margin: 0 auto; /* Center the image horizontally */
+        }
+
+        footer {
+            background-color: #467;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        footer p {
+            margin: 0; /* Remove default margin */
+        }
+
+        footer a {
+            text-align: center;
+    
+    background-color: #467;
+    color: #fff;  }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mobile Kitchen</h1>
+    </header>
+
+    <section class="events">
+        <div class="event">
+            <img src="cooking.jpg" alt="Event Image">
+            <h2>Live Cooking Demonstration</h2>
+            <p>Join us for an interactive cooking session with Chef Thabo Sello. Learn new recipes and cooking techniques!</p>
+            <div class="event-details">
+                <p><strong>Date:</strong> July 15, 2024</p>
+                <p><strong>Time:</strong> 4:00 PM - 6:00 PM</p>
+                <p><strong>Location:</strong> Family Mobile Kitchen Truck</p>
+            </div>
+        </div>
+
+        <div class="event">
+            <img src="community.jpg" alt="Event Image">
+            <h2>Community Food Drive</h2>
+            <p>Support our community food drive and receive special discounts on your next order!</p>
+            <div class="event-details">
+                <p><strong>Date:</strong> August 5, 2024</p>
+                <p><strong>Time:</strong> 10:00 AM - 2:00 PM</p>
+                <p><strong>Location:</strong> City Park</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Centered Back Link -->
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="index.html" style="text-decoration: none; color: #007bff;">Back to Home</a>
+    </div>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact: info@mobilekitchen.com</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com" class="social-icon"><img style="width: 44px; height: 44px;" src="facebook.png" alt="Facebook"></a>
+            <!-- Add more social media icons -->
+        </div>
+        <p>&copy; 2024 Family Mobile Kitchen</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional cart styles */
+        .cart {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-item {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+
+        .cart-item img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .cart-item-details {
+            flex-grow: 1;
+        }
+
+        .cart-item-details h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .cart-item-details p {
+            margin: 5px 0;
+            color: #666;
+        }
+
+        .cart-item-actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .cart-item-quantity {
+            margin-right: 20px;
+        }
+
+        .cart-item-quantity input {
+            width: 40px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .cart-item-remove button {
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cart-summary {
+            margin-top: 20px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+            text-align: right;
+        }
+
+        .cart-summary p {
+            margin: 10px 0;
+        }
+
+        .cart-checkout-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        .cart-checkout-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mobile Kitchen</h1>
+    </header>
+    <h1> Shopping Cart</h1>
+
+    <div class="cart">
+        <div class="cart-item">
+            <img src="hot.jpg" alt="Hot Dog">
+            <div class="cart-item-details">
+                <h3>Hot Dog</h3>
+                <p>Delicious beef hot dog in a soft bun, topped with mustard, ketchup, and onions.</p>
+                <p>Price: M7.99</p>
+            </div>
+            <div class="cart-item-actions">
+                <div class="cart-item-quantity">
+                    <input type="number" value="1" min="1">
+                </div>
+                <div class="cart-item-remove">
+                    <button>Remove</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional cart items -->
+        <div class="cart-item">
+            <img src="burger.jpg" alt="Burger">
+            <div class="cart-item-details">
+                <h3>Cheeseburger</h3>
+                <p>Classic cheeseburger with juicy beef patty, cheese, lettuce, and tomato.</p>
+                <p>Price: M9.99</p>
+            </div>
+            <div class="cart-item-actions">
+                <div class="cart-item-quantity">
+                    <input type="number" value="1" min="1">
+                </div>
+                <div class="cart-item-remove">
+                    <button>Remove</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart summary -->
+        <div class="cart-summary">
+            <p>Total Items: 2</p>
+            <p>Total Price: M17.98</p>
+            <button class="cart-checkout-button">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Contact: info@mobilekitchen.com</p>
+        <div class="social-links">
+            <a href="facebook.com" class="social-icon"><img style="width: 25px; height: 25px;" src="facebook.png" alt="Facebook"></a>
+        </div>
+        <p>&copy; 2024 Mobile Kitchen</p>
+    </footer>
+</body>
+</html>
